@@ -1,9 +1,7 @@
 from django.contrib import admin
 from django.urls import include, path
 
-urlpatterns =  [
+urlpatterns = [
     path('', include('precaritorazor.urls')),
     path('admin/', admin.site.urls),
 ]
-
-# urlpatterns = [path(r'^api/', include(urlpatterns))]
