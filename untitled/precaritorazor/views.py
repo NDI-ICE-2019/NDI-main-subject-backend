@@ -1,3 +1,12 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+from rest_framework import viewsets
+
+from .serializers import AidSerializer
+from .models import Aid
+
+
+class AidViewSet(viewsets.ModelViewSet):
+    queryset = Aid.objects.all().order_by('title')
+    serializer_class = AidSerializer
+
