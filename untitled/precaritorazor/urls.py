@@ -5,6 +5,10 @@ from . import views
 
 router = routers.DefaultRouter()
 router.register(r'aids', views.AidViewSet)
+router.register(r'organizations', views.OrganizationViewSet)
+router.register(r'types', views.TypeViewSet)
+router.register(r'categories', views.CategoryViewSet)
+router.register(r'criteria', views.CriteriaViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
