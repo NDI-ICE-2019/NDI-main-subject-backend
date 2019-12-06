@@ -9,6 +9,8 @@ router.register(r'organizations', views.OrganizationViewSet)
 router.register(r'types', views.TypeViewSet)
 router.register(r'categories', views.CategoryViewSet)
 router.register(r'criteria', views.CriteriaViewSet)
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
