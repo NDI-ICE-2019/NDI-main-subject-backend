@@ -25,7 +25,9 @@ SECRET_KEY = '-^53qe8(n9$s*h8drvpmumeohebaxca)4%8f=&9n-lbir#2hdv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nas.orriere.com','90.76.236.229']
+
+FORCE_SCRIPT_NAME = '/api/'
 
 
 # Application definition

@@ -6,7 +6,7 @@ from .models import Aid, Organization, Criteria, Category, Type
 class AidSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Aid
-        fields = ['title']
+        fields = "__all__"
 
 
 class OrganizationSerializer(serializers.HyperlinkedModelSerializer):
